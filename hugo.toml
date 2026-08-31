@@ -1,0 +1,52 @@
+baseURL = 'https://the-east-wind.github.io/blog/'
+languageCode = 'en-us'
+title = 'The East Wind'
+theme = 'PaperMod'
+
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+[pagination]
+pagerSize = 10
+
+[minify]
+disableXML = true
+
+[params]
+  env = 'production'
+  description = 'Notes on software engineering and interesting systems.'
+  defaultTheme = 'auto'
+  disableThemeToggle = false
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  disableSpecial1stPost = true
+
+  [params.homeInfoParams]
+    Title = "Hi there \U0001F44B"
+    Content = "Small write-ups on software engineering and interesting systems I come across."
+
+[menu]
+  [[menu.main]]
+    identifier = 'posts'
+    name = 'Posts'
+    url = '/posts/'
+    weight = 10
+  [[menu.main]]
+    identifier = 'tags'
+    name = 'Tags'
+    url = '/tags/'
+    weight = 20
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+    codeFences = true
+    guessSyntax = true
+    lineNos = false
+    style = 'monokai'
